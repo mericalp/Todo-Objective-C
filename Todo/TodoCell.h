@@ -6,10 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MaterialButtons.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TodoCell : UICollectionViewCell
+
+@property(nonatomic, copy) NSString *text;
+@property(nonatomic, readonly) MDCButton *deleteButton;
 
 @end
 
